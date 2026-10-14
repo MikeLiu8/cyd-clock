@@ -15,4 +15,4 @@ Stage13-v17 朋友試用版，供 GitHub Pages 部署。
 
 ## Pages
 
-發布到獨立 public repository `cyd-clock`，Pages source為 `main` root `/`，HTTPS。只上載這個目錄的公開文件，不推送上層整個工作資料庫。Repository：https://github.com/MikeLiu8/cyd-clock 。網站：https://mikeliu8.github.io/cyd-clock/ 。使用者已授權本次發布，文件已上載並啟用 Pages；首次部署正在建立，正式網址可用性另行核對。
+發布到獨立 public repository `cyd-clock`，Pages source為 `main` root `/`，HTTPS。只上載這個目錄的公開文件，不推送上層整個工作資料庫。Repository：https://github.com/MikeLiu8/cyd-clock 。網站：https://mikeliu8.github.io/cyd-clock/ 。使用者已授權本次發布，文件已上載並啟用 Pages；HTTPS 正式頁面、manifest、BIN、SD ZIP及source ZIP均已下載核對，與本地檔案一致。瀏覽器新板燒錄仍未實測。
