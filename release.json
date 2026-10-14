@@ -1,0 +1,25 @@
+{
+  "version": "stage13-desk-v17",
+  "application_sha256": "2f563194a4a0b05c71001a753e48d3ebfc12b528af327f9525de8502a8fe1578",
+  "packaging": "Four actual flashed segments, unchanged, at original offsets; gap fill FF; clean install resets NVS settings",
+  "files": {
+    "firmware-source-v17.zip": {
+      "bytes": 94439,
+      "sha256": "3f2f10102ad9b84c7d1fa6c9da6bec5244b63164f07780d3bbaa91b95ed6f58e"
+    },
+    "firmware-v17.bin": {
+      "bytes": 1367344,
+      "sha256": "34fd5f55f47fc672f8b9ef4898ed5692ca314e3a172494d89b074423778ec3c6"
+    },
+    "sd-card-v17.zip": {
+      "bytes": 10286581,
+      "sha256": "01ac6dbcf2a728accd1d4a17456fb6e911330401fa893377661c91cf3fca3b1b"
+    }
+  },
+  "sd_files": 3394,
+  "marquee_days": 366,
+  "reflection_days": 366,
+  "publication": "pending GitHub authentication",
+  "physical_web_install": "unverified; no board flashed for packaging",
+  "known_issue": "Intermittent bus slot2/3 update failure; self-recovered; cause unconfirmed"
+}
