@@ -19,7 +19,9 @@
   "sd_files": 3394,
   "marquee_days": 366,
   "reflection_days": 366,
-  "publication": "pending GitHub authentication",
+  "publication": "GitHub Pages configured; deployment verification pending",
   "physical_web_install": "unverified; no board flashed for packaging",
-  "known_issue": "Intermittent bus slot2/3 update failure; self-recovered; cause unconfirmed"
+  "known_issue": "Intermittent bus slot2/3 update failure; self-recovered; cause unconfirmed",
+  "repository": "https://github.com/MikeLiu8/cyd-clock",
+  "site": "https://mikeliu8.github.io/cyd-clock/"
 }
