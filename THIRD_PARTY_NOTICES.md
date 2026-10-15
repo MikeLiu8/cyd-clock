@@ -1,6 +1,6 @@
 # 來源與第三方聲明
 
-本頁為 CYD 時鐘 Stage13-v17 朋友試用版。既有版權聲明保留，未把第三方內容重新授予專案自訂授權。
+本頁為 IGNITE Clock｜燃續日常 Stage13-v17 朋友試用版。既有版權聲明保留，未把第三方內容重新授予專案自訂授權。
 
 - **Arduino ESP32 3.3.12**：LGPL-2.1-or-later。原文：[Arduino-ESP32-LGPL.md](notices/Arduino-ESP32-LGPL.md)。原始碼：https://github.com/espressif/arduino-esp32/tree/3.3.12 。所用 ESP-IDF／SDK 各部分沿用上游授權及聲明。
 - **TFT_eSPI 2.5.43**：保留上游授權全文：[TFT_eSPI-license.txt](notices/TFT_eSPI-license.txt)。原始碼：https://github.com/Bodmer/TFT_eSPI/tree/V2.5.43 。使用現有 ILI9341_2_DRIVER 設定，未改變 driver 原始碼。
