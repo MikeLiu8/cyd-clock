@@ -12,7 +12,7 @@
 
 **[開啟安裝網站](https://mikeliu8.github.io/ignite-clock/)** · **[下載 SD 資料包](https://mikeliu8.github.io/ignite-clock/downloads/sd-card-v17.zip)** · **[操作方式](#操作方式)** · **[常見問題](#常見問題)**
 
-> **目前版本：Stage13-v17 · 朋友試用版**
+> **目前版本：Stage13-v19 · 朋友試用版**
 >
 > 已在開發板上完成主要功能及畫面操作驗收。另一塊 CYD 的觸控校正、瀏覽器首次安裝及長期穩定性，仍需實機確認。
 
@@ -27,7 +27,7 @@
 | **首頁** | 大型七段數碼時鐘、秒數、日期及「週X」、所選測站氣溫、香港天氣狀況與圖示、天文台濕度，以及完整每日金句滾動文字帶。 |
 | **聖經與反思** | 每日一節繁體和合本經文、經文出處，以及與當日選經配對的一條反思問題；全年366日，包含2月29日。 |
 | **交通** | 同時顯示三個巴士收藏，每個收藏最多顯示三班預計到站時間；各自設定路線、方向及上車站。 |
-| **倒數工具** | 快捷選擇倒數時間，開始、暫停及重設；可進入手動設定入口。 |
+| **倒數工具** | 快捷選擇倒數時間，開始、暫停及重設；按「設定」直接顯示網址／PIN／QR Code，右上有 IGNITE Logo。 |
 
 自動輪播只循環 **首頁 → 聖經 → 交通**。第四頁工具及設定畫面由手動開啟，使用時不會自動跳走。
 
@@ -116,6 +116,8 @@ PIN 每次重開會改變，請以當時 CYD 畫面為準，不要把 PIN 或 Wi
 
 ## 設定天氣及巴士
 
+左右切到第四頁倒數工具，按「設定」便直接見到網址、PIN 及 QR Code；不再經過選頁表單或 Wi-Fi／天氣／巴士分類畫面。按「返回倒數」回原頁，正在執行的倒數繼續。
+
 **天氣位置**：在 CYD 的設定入口開啟網頁，選擇測站並儲存。預報詳情仍顯示香港整體天氣。
 
 **巴士收藏**：
@@ -128,12 +130,28 @@ PIN 每次重開會改變，請以當時 CYD 畫面為準，不要把 PIN 或 Wi
 
 「已選用此站，尚未儲存到 CYD」只代表網頁已暫存選擇，尚未寫入裝置。
 
+## 日間與夜間模式
+
+本版本支援按香港時間定時切換配色及背光亮度，並非按環境光暗自動感應。
+
+| 模式 | 配色 | 預設亮度值 |
+| --- | --- | --- |
+| 日間 | 米白底、深色文字 | 255 |
+| 夜間 | 深色底、淺色文字 | 60 |
+
+1. 在 CYD 第四頁按「設定」，用同一 Wi-Fi 的手機／電腦開啟畫面網址或掃 QR Code。
+2. 輸入畫面 PIN，按「讀取目前設定」。
+3. 在「顯示與夜間模式」勾選「啟用定時夜間模式」。
+4. 設定夜間開始／結束時間及日夜亮度，再按「儲存巴士、工具及顯示設定」。
+
+出廠預設未啟用；預設夜間時段為 **22:00–07:00**，可自行修改。背光亮度值不是百分比。設定頁 Logo 保留原色及淡色小底板，讓深藍字在夜間仍可辨認。
+
 ## 操作方式
 
 | 操作 | 結果 |
 | --- | --- |
-| 輕按畫面左／右側 | 手動切上一頁／下一頁，包括第四頁工具 |
-| 中央長按約1.5秒 | 開啟選頁畫面 |
+| 輕按畫面左／右側 | 手動切上一頁／下一頁，包括第四頁工具；同時解除固定 |
+| 中央長按約1.5秒 | 固定目前頁面；再長按解除固定。時鐘及資料更新繼續 |
 | 輕按首頁金句帶 | 暫停／繼續滾動；暫停時首頁不自動離開 |
 | 輕按首頁天氣圖示 | 查看明天及後天天氣預報 |
 | 預報頁按「返回」 | 回首頁，接續金句原位置及暫停狀態 |
@@ -163,14 +181,21 @@ PIN 每次重開會改變，請以當時 CYD 畫面為準，不要把 PIN 或 Wi
 
 ## 版本及驗證範圍
 
-目前提供 **Stage13-v17**：
+目前提供 **Stage13-v19**：
 
 - 自動三頁輪播，第四頁工具手動進入。
 - 設定網頁 gzip 壓縮，減少 Flash 用量；精簡畫面的設定副本，減少靜態 RAM。
 - 點首頁天氣圖示查看明天／後天預報。
 - 保留每日滾動金句、366條反思及三個巴士收藏。
+- v18：取消選頁及設定分類畫面；中央長按固定／解除，左右切頁解除固定。
+- v19：設定頁右上加入64×32正式 IGNITE Logo；不需增加 SD 檔案。
+- 定時日夜模式沿用既有功能，本次補充開啟方法，沒有自動替使用者啟用。
 
-開發板已確認主要畫面、切頁、金句暫停／接續、兩日預報返回、倒數，以及設定保存讀回。安裝網站的 HTTPS、manifest、BIN 及資料包下載亦已核對。
+目前版本的實際 app 為1,302,528 bytes，程式分區餘8,192 bytes；靜態 RAM 72,300 bytes。Logo 用1,730-byte Flash資料，繪製像素行暫用128-byte stack，另有函式開銷，未量度整個繪製過程的實機RAM增量。
+
+[舊版 v17 BIN](https://mikeliu8.github.io/ignite-clock/downloads/firmware-v17.bin)及[舊版 v17 原始碼](https://mikeliu8.github.io/ignite-clock/downloads/firmware-source-v17.zip)保留下載。SD資料包仍沿用 `sd-card-v17.zip`，與v19兼容，已有完整資料的卡毋須重新複製。
+
+開發板已確認主要畫面、切頁、金句暫停／接續、兩日預報返回、倒數及設定保存讀回；v18直接設定／固定／解除與v19 Logo可讀性／設定返回／左右切頁亦已由使用者實機確認。安裝網站的 HTTPS、manifest、BIN 及資料包下載亦已核對。
 
 **未由此證明**：所有 CYD 硬件版本相容、另一塊板的瀏覽器首次燒錄、長時間穩定性或所有網絡故障情境。這是朋友試用版，歡迎提供實際問題。
 
@@ -180,13 +205,13 @@ PIN 每次重開會改變，請以當時 CYD 畫面為準，不要把 PIN 或 Wi
 | --- | --- |
 | [`index.html`](index.html) | 安裝網站及首次設定說明 |
 | [`manifest.json`](manifest.json) | ESP Web Tools 安裝設定 |
-| [`firmware-v17.bin`](https://mikeliu8.github.io/ignite-clock/downloads/firmware-v17.bin) | 由v17已燒錄的四個 segment 合併的完整韌體，offset0 |
+| [`firmware-v19.bin`](https://mikeliu8.github.io/ignite-clock/downloads/firmware-v19.bin) | 由v19已燒錄的四個 segment 合併的完整韌體，offset0 |
 | [`sd-card-v17.zip`](https://mikeliu8.github.io/ignite-clock/downloads/sd-card-v17.zip) | 經文、全年選經、反思及字形；不含 Wi-Fi 設定 |
-| [`firmware-source-v17.zip`](https://mikeliu8.github.io/ignite-clock/downloads/firmware-source-v17.zip) | 此版本的韌體原始碼 |
+| [`firmware-source-v19.zip`](https://mikeliu8.github.io/ignite-clock/downloads/firmware-source-v19.zip) | 此版本的韌體原始碼 |
 | [`SHA256SUMS.txt`](downloads/SHA256SUMS.txt) | 下載檔案的 SHA256 |
 | [`release.json`](release.json) | 版本及檔案資料 |
 
-開發基準：ESP32 Arduino core **3.3.12**、TFT_eSPI **2.5.43**、XPT2046_Touchscreen **1.4**；FQBN `esp32:esp32:jczn_2432s028r`。安裝功能使用 ESP Web Tools，日常 Wi-Fi 設定使用 CYD 自己的網頁入口，未加入 Improv Wi-Fi。
+開發基準：ESP32 Arduino core **3.3.12**、TFT_eSPI **2.5.43**、XPT2046_Touchscreen **1.4**；FQBN `esp32:esp32:jczn_2432s028r`。安裝工具的識別名稱仍沿用「CYD 時鐘」，版本與BIN已指向v19；作品對外名稱為 IGNITE Clock｜燃續日常。安裝功能使用 ESP Web Tools，日常 Wi-Fi 設定使用 CYD 自己的網頁入口，未加入 Improv Wi-Fi。
 
 ## 回報問題
 

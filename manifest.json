@@ -1,6 +1,6 @@
 {
   "name": "CYD 時鐘",
-  "version": "Stage13-v17 試用版",
+  "version": "Stage13-v19 試用版",
   "new_install_prompt_erase": true,
   "new_install_improv_wait_time": 0,
   "builds": [
@@ -9,7 +9,7 @@
       "improv": false,
       "parts": [
         {
-          "path": "downloads/firmware-v17.bin",
+          "path": "downloads/firmware-v19.bin",
           "offset": 0
         }
       ]

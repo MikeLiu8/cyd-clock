@@ -1,15 +1,23 @@
 {
-  "version": "stage13-desk-v17",
-  "application_sha256": "2f563194a4a0b05c71001a753e48d3ebfc12b528af327f9525de8502a8fe1578",
+  "version": "stage13-desk-v19",
+  "application_sha256": "4740d57ae36cc52b3663d9297948f614e4b842c3c9076631053bf305c5d9d297",
   "packaging": "Four actual flashed segments, unchanged, at original offsets; gap fill FF; clean install resets NVS settings",
   "files": {
     "firmware-source-v17.zip": {
       "bytes": 94439,
       "sha256": "3f2f10102ad9b84c7d1fa6c9da6bec5244b63164f07780d3bbaa91b95ed6f58e"
     },
+    "firmware-source-v19.zip": {
+      "bytes": 96351,
+      "sha256": "ba74c733cc38945947621397415e20a881709e573c918fea52e82f7ff893a286"
+    },
     "firmware-v17.bin": {
       "bytes": 1367344,
       "sha256": "34fd5f55f47fc672f8b9ef4898ed5692ca314e3a172494d89b074423778ec3c6"
+    },
+    "firmware-v19.bin": {
+      "bytes": 1368064,
+      "sha256": "385608dcb9175703c3c2f33fe0759139ed47ac902672fda9b69634706011d542"
     },
     "sd-card-v17.zip": {
       "bytes": 10286581,
@@ -20,8 +28,20 @@
   "marquee_days": 366,
   "reflection_days": 366,
   "publication": "Published on GitHub Pages; HTTPS page and downloads verified",
-  "physical_web_install": "unverified; no board flashed for packaging",
+  "physical_web_install": "unverified; packaging did not flash a board",
   "known_issue": "Intermittent bus slot2/3 update failure; self-recovered; cause unconfirmed",
   "repository": "https://github.com/MikeLiu8/ignite-clock",
-  "site": "https://mikeliu8.github.io/ignite-clock/"
+  "site": "https://mikeliu8.github.io/ignite-clock/",
+  "application_binary_bytes": 1302528,
+  "application_partition_headroom_bytes": 8192,
+  "static_ram_bytes": 72300,
+  "sd_package": "downloads/sd-card-v17.zip (unchanged; compatible with v19)",
+  "previous_firmware": "downloads/firmware-v17.bin",
+  "previous_source": "downloads/firmware-source-v17.zip",
+  "hardware_acceptance": "User confirmed v18 direct settings/pin/unpin/navigation and v19 logo/return/navigation; no new browser first-install proof",
+  "changes": [
+    "v18 removes selection/settings overview; center long hold pins/unpins; manual page turn unpins",
+    "v19 adds64x32 IGNITE logo to settings; no new SD files",
+    "Existing timed night mode documented; disabled by default;22:00-07:00 default schedule"
+  ]
 }
