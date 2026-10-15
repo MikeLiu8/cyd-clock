@@ -22,6 +22,6 @@
   "publication": "Published on GitHub Pages; HTTPS page and downloads verified",
   "physical_web_install": "unverified; no board flashed for packaging",
   "known_issue": "Intermittent bus slot2/3 update failure; self-recovered; cause unconfirmed",
-  "repository": "https://github.com/MikeLiu8/cyd-clock",
-  "site": "https://mikeliu8.github.io/cyd-clock/"
+  "repository": "https://github.com/MikeLiu8/ignite-clock",
+  "site": "https://mikeliu8.github.io/ignite-clock/"
 }

@@ -10,7 +10,7 @@
 
 以 **ESP32-2432S028R（Cheap Yellow Display／CYD）** 製作，配合 SD 卡儲存經文、反思及中文字形；連上 Wi-Fi 後自動校時及更新資訊。日常設定可透過手機或電腦瀏覽器修改。
 
-**[開啟安裝網站](https://mikeliu8.github.io/cyd-clock/)** · **[下載 SD 資料包](https://mikeliu8.github.io/cyd-clock/downloads/sd-card-v17.zip)** · **[操作方式](#操作方式)** · **[常見問題](#常見問題)**
+**[開啟安裝網站](https://mikeliu8.github.io/ignite-clock/)** · **[下載 SD 資料包](https://mikeliu8.github.io/ignite-clock/downloads/sd-card-v17.zip)** · **[操作方式](#操作方式)** · **[常見問題](#常見問題)**
 
 > **目前版本：Stage13-v17 · 朋友試用版**
 >
@@ -77,7 +77,7 @@
 
 ### 1. 準備 SD 卡
 
-下載並解壓 [SD 資料包](https://mikeliu8.github.io/cyd-clock/downloads/sd-card-v17.zip)，把以下資料直接放到 SD 卡**最外層**：
+下載並解壓 [SD 資料包](https://mikeliu8.github.io/ignite-clock/downloads/sd-card-v17.zip)，把以下資料直接放到 SD 卡**最外層**：
 
 ```text
 SD 卡最外層/
@@ -97,7 +97,7 @@ SD 卡最外層/
 
 ### 2. 在網頁安裝韌體
 
-1. 用電腦 Chrome／Edge 開啟 **[IGNITE Clock 安裝網站](https://mikeliu8.github.io/cyd-clock/)**。
+1. 用電腦 Chrome／Edge 開啟 **[IGNITE Clock 安裝網站](https://mikeliu8.github.io/ignite-clock/)**。
 2. 以一條資料 USB 線接上 CYD，確認沒有同時接兩個 USB。
 3. 閱讀板型及重設提示，勾選確認項目。
 4. 按「連接 CYD 並安裝」，選擇 CYD 的 USB 裝置，依畫面完成安裝。
@@ -180,9 +180,9 @@ PIN 每次重開會改變，請以當時 CYD 畫面為準，不要把 PIN 或 Wi
 | --- | --- |
 | [`index.html`](index.html) | 安裝網站及首次設定說明 |
 | [`manifest.json`](manifest.json) | ESP Web Tools 安裝設定 |
-| [`firmware-v17.bin`](https://mikeliu8.github.io/cyd-clock/downloads/firmware-v17.bin) | 由v17已燒錄的四個 segment 合併的完整韌體，offset0 |
-| [`sd-card-v17.zip`](https://mikeliu8.github.io/cyd-clock/downloads/sd-card-v17.zip) | 經文、全年選經、反思及字形；不含 Wi-Fi 設定 |
-| [`firmware-source-v17.zip`](https://mikeliu8.github.io/cyd-clock/downloads/firmware-source-v17.zip) | 此版本的韌體原始碼 |
+| [`firmware-v17.bin`](https://mikeliu8.github.io/ignite-clock/downloads/firmware-v17.bin) | 由v17已燒錄的四個 segment 合併的完整韌體，offset0 |
+| [`sd-card-v17.zip`](https://mikeliu8.github.io/ignite-clock/downloads/sd-card-v17.zip) | 經文、全年選經、反思及字形；不含 Wi-Fi 設定 |
+| [`firmware-source-v17.zip`](https://mikeliu8.github.io/ignite-clock/downloads/firmware-source-v17.zip) | 此版本的韌體原始碼 |
 | [`SHA256SUMS.txt`](downloads/SHA256SUMS.txt) | 下載檔案的 SHA256 |
 | [`release.json`](release.json) | 版本及檔案資料 |
 
@@ -190,7 +190,7 @@ PIN 每次重開會改變，請以當時 CYD 畫面為準，不要把 PIN 或 Wi
 
 ## 回報問題
 
-可在 [GitHub Issues](https://github.com/MikeLiu8/cyd-clock/issues) 提供：版本、板型、發生前的操作、完整錯誤文字，以及已遮住敏感資料的畫面。請勿公開 PIN、Wi-Fi 密碼、token 或私人網絡設定。
+可在 [GitHub Issues](https://github.com/MikeLiu8/ignite-clock/issues) 提供：版本、板型、發生前的操作、完整錯誤文字，以及已遮住敏感資料的畫面。請勿公開 PIN、Wi-Fi 密碼、token 或私人網絡設定。
 
 ## 關於 IGNITE Clock
 
