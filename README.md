@@ -193,7 +193,7 @@ PIN 每次重開會改變，請以當時 CYD 畫面為準，不要把 PIN 或 Wi
 
 目前版本的實際 app 為1,302,528 bytes，程式分區餘8,192 bytes；靜態 RAM 72,300 bytes。Logo 用1,730-byte Flash資料，繪製像素行暫用128-byte stack，另有函式開銷，未量度整個繪製過程的實機RAM增量。
 
-[舊版 v17 BIN](https://mikeliu8.github.io/ignite-clock/downloads/firmware-v17.bin)及[舊版 v17 原始碼](https://mikeliu8.github.io/ignite-clock/downloads/firmware-source-v17.zip)保留下載。SD資料包仍沿用 `sd-card-v17.zip`，與v19兼容，已有完整資料的卡毋須重新複製。
+SD資料包仍沿用 `sd-card-v17.zip`，與v19兼容，已有完整資料的卡毋須重新複製。
 
 開發板已確認主要畫面、切頁、金句暫停／接續、兩日預報返回、倒數及設定保存讀回；v18直接設定／固定／解除與v19 Logo可讀性／設定返回／左右切頁亦已由使用者實機確認。安裝網站的 HTTPS、manifest、BIN 及資料包下載亦已核對。
 

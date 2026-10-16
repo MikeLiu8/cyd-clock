@@ -3,17 +3,9 @@
   "application_sha256": "4740d57ae36cc52b3663d9297948f614e4b842c3c9076631053bf305c5d9d297",
   "packaging": "Four actual flashed segments, unchanged, at original offsets; gap fill FF; clean install resets NVS settings",
   "files": {
-    "firmware-source-v17.zip": {
-      "bytes": 94439,
-      "sha256": "3f2f10102ad9b84c7d1fa6c9da6bec5244b63164f07780d3bbaa91b95ed6f58e"
-    },
     "firmware-source-v19.zip": {
       "bytes": 96351,
       "sha256": "ba74c733cc38945947621397415e20a881709e573c918fea52e82f7ff893a286"
-    },
-    "firmware-v17.bin": {
-      "bytes": 1367344,
-      "sha256": "34fd5f55f47fc672f8b9ef4898ed5692ca314e3a172494d89b074423778ec3c6"
     },
     "firmware-v19.bin": {
       "bytes": 1368064,
@@ -36,8 +28,6 @@
   "application_partition_headroom_bytes": 8192,
   "static_ram_bytes": 72300,
   "sd_package": "downloads/sd-card-v17.zip (unchanged; compatible with v19)",
-  "previous_firmware": "downloads/firmware-v17.bin",
-  "previous_source": "downloads/firmware-source-v17.zip",
   "hardware_acceptance": "User confirmed v18 direct settings/pin/unpin/navigation and v19 logo/return/navigation; no new browser first-install proof",
   "changes": [
     "v18 removes selection/settings overview; center long hold pins/unpins; manual page turn unpins",
